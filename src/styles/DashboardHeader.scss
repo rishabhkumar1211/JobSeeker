@@ -1,0 +1,149 @@
+.dashboard-card {
+  background-color: #f5faff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .welcome-text {
+    color: #2d3b54;
+    font-weight: bold;
+  }
+
+  .subtext {
+    color: #6b7380;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .first-row {
+    display: flex;
+    justify-content: space-between;
+
+    .stat-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #f0f4f8; // Light background on hover
+        transform: scale(1.02);
+      }
+
+      .stat-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .stat-text {
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+          margin: 0;
+          color: #2d3b54;
+          font-weight: bold;
+        }
+
+        body2 {
+          color: #6b7380;
+        }
+      }
+    }
+
+    .progress-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #f0f4f8; // Light background on hover
+        transform: scale(1.02);
+      }
+
+      .progress-chart {
+        margin: 0 auto;
+      }
+
+      .progress-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #6b7380;
+      }
+    }
+
+    .private-job-board {
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #f0f4f8; // Light background on hover
+        transform: scale(1.02);
+      }
+
+      img {
+        width: 80px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #6b7380;
+      }
+    }
+  }
+
+  
+
+  .second-row {
+    margin-top: 1.5rem;
+
+    .stat-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #f0f4f8; // Light background on hover
+        transform: scale(1.02);
+      }
+
+      .stat-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .stat-text {
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+          margin: 0;
+          color: #2d3b54;
+          font-weight: bold;
+        }
+
+        body2 {
+          color: #6b7380;
+        }
+      }
+    }
+  }
+}

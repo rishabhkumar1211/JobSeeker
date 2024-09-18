@@ -1,0 +1,46 @@
+.sidebar {
+  width: 250px;
+  background-color: #f7f8fa;
+  padding-top: 30px; /* Ensure there's enough padding to avoid topbar overlap */
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading, if needed */
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 10px 0;
+      cursor: pointer;
+      text-align: center; /* Center align the text in the list items */
+      width: 100%; /* Make sure the li takes the full width */
+      display: flex; /* Use flexbox to align the icon and text */
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Align the icon and text vertically */
+      gap: 10px; /* Space between the icon and the text */
+
+      i {
+        font-size: 18px; /* Adjust the size of the icon */
+      }
+
+      &:hover {
+        background-color: #e0e7ff; /* Add hover effect if needed */
+      }
+
+      &.active {
+        background-color: #e0e7ff; /* Background color for active item */
+        // font-weight: bold;
+        color: blue;
+      }
+
+      .sidebar__text {
+        font-size: 16px;
+      }
+    }
+  }
+}

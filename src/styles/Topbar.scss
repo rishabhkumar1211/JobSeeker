@@ -1,0 +1,67 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .topbar__left {
+    .topbar__logo {
+      font-size: 20px;
+      font-weight: bold;
+    //   color: #3c40c6;
+    }
+  }
+  
+  .topbar__right {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  
+    /* Search Input */
+    .topbar__search {
+      width: 200px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+  
+    /* Icons Container */
+    .topbar__icons {
+      display: flex;
+      align-items: center;
+      
+      /* Each icon */
+      .topbar__icon {
+        margin-right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        
+        i {
+          color: #6d6868;
+        }
+      }
+    }
+  
+    /* Profile Picture */
+    .topbar__profile {
+      .topbar__profile-img {
+        width: 30px;
+        height: 30px;
+        padding-top: 6px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+      }
+    }
+  }
+  

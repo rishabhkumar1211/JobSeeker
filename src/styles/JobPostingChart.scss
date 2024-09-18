@@ -1,0 +1,40 @@
+.job-postings-chart {
+  display: flex;
+  flex-direction: column; // Stack the title and chart vertically
+  align-items: flex-start; // Align items to the left
+
+  .chart-title {
+    margin-bottom: 10px; // Space between the title and the chart
+    font-size: 1.5rem; // Adjust font size as needed
+  }
+
+  .chart-wrapper {
+    width: 100%;
+    height: 300px;
+    max-width: 600px; // Adjust max width to fit your design
+  }
+
+  // Style the legend bullet points
+  .chart-wrapper .chartjs-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // Align legend items to the left
+    list-style-type: none; // Remove default list styling
+
+    .chartjs-legend-item {
+      display: flex;
+      align-items: center;
+
+      .chartjs-legend-box {
+        width: 20px; // Width of the bullet point
+        height: 10px; // Height of the bullet point
+        margin-right: 10px; // Space between bullet and text
+        border-radius: 3px; // Optional: rounded corners
+      }
+
+      .chartjs-legend-label {
+        font-size: 1rem; // Adjust font size as needed
+      }
+    }
+  }
+}
